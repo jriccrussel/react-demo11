@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+// font-family: 'Open Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+// font-family: 'Libre Baskerville', serif;
+
+*{
+  margin:0px; 
+  padding:0px;
+  box-sizing:border-box;
+}
+
+body{
+  background-color:#0a1075;
+  padding:40px;
+}
+
+img{width: 100%;}
+
+section{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  .title{
+    color: #fc659e;
+    font-size: 70px;
+    line-height: 98px;
+    font-family: 'Libre Baskerville', serif;
+    padding: 60px 0 40px;
+    width: 95%;
+    background: transparent;
+    margin: 40px auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-kerning: none;
+
+    @media screen and (max-width: 1025px){
+      font-size: 60px;
+      line-height: 74px;
+      padding-left: 40px;
+    }
+
+    @media screen and (max-width: 640px){
+      font-size: 44px;
+      line-height: 61px;
+    }
+
+    @media screen and (max-width: 540px){
+      font-size: 34px;
+      line-height: 51px;
+      padding-left: 0;
+    }
+
+    .white{
+      color: #fff;
+      overflow: hidden;
+    }
+  }
+}
+
+.cluster{
+  position: relative;
+  width: 100%;
+  max-width: 874px;
+  height: 792px;
+  margin: 100px auto;
+  background: transparent;
+  padding-bottom: 100px;
+
+  @media screen and (max-width: 1025px){
+    max-width: 600px;
+    height: 550px;
+    margin: 20px 0;
+  }
+
+  @media screen and (max-width: 640px){
+    max-width: 480px;
+    height: 436px;
+  }
+
+  @media screen and (max-width: 540px){
+    max-width: 320px;
+    height: 530px;
+  }
+
+  .clusterPieces{
+    position: absolute;
+
+    @media screen and (max-width: 540px){
+      position:relative;
+    }
+
+    .caption{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      color: #fc659e;
+      text-align: right;
+
+      @media screen and (max-width: 1025px){
+        bottom: 38px;
+        right: 0;
+      }
+    
+      @media screen and (max-width: 640px){
+        bottom: 25px;
+        right: 0;
+      }
+    
+      @media screen and (max-width: 540px){
+        float: right;
+        bottom: 0;
+      }
+
+      span{
+        color: #fff;
+      }
+    }
+
+    .captionBurrowing{
+      @media screen and (max-width: 1025px){
+        top: 605px;
+      }
+    
+      @media screen and (max-width: 640px){
+        top: 482px;
+      }
+    
+      @media screen and (max-width: 540px){
+        float: right;
+        top: 0;
+      }
+    }    
+  }
+
+  .owlHorned, .owlBurrowing{
+    @media screen and (max-width: 640px){
+      max-width:248px;
+    }
+  }
+
+  .owlHorned {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+    max-height: 700px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    
+    @media screen and (max-width: 1025px){
+      max-width: 310px;
+    }
+  
+    @media screen and (max-width: 640px){
+  
+    }
+  
+    @media screen and (max-width: 540px){
+      max-width: 320px;
+      top: 0;
+    }
+  }
+
+  .owlBurrowing {
+    width:100%;
+    height:auto; 
+    max-width:674px; 
+    max-height:700px; 
+    top:162px; 
+    right:0; 
+    z-index:1;
+
+    @media screen and (max-width: 1025px){
+      max-width: 460px;
+      top: 112px;
+    }
+  
+    @media screen and (max-width: 640px){
+      max-width: 369px;
+      top: 88px;
+    }
+  
+    @media screen and (max-width: 540px){
+      max-width: 320px;
+      top: 0;
+    }
+  }
+
+  .circle{
+    width: 100%;
+    max-width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: #fc659e;
+    left: 214px;
+    bottom: 0;
+    z-index: 1;
+
+    @media screen and (max-width: 1025px){
+      max-width: 246px;
+      height: 246px;
+      left: 146px;
+      top: 300px;
+    }
+  
+    @media screen and (max-width: 640px){
+      max-width: 196px;
+      height: 196px;
+      left: 115px;
+      top: 240px;
+    }
+  
+    @media screen and (max-width: 540px){
+      display: none;
+    }
+  }
+
+  .triangle{
+    width: 100%;
+    max-width: 448px;
+    height: 446px;
+    left: -28px;
+    top: 0;
+    z-index: 3;
+
+    @media screen and (max-width: 1025px){
+      max-width: 307px;
+      height: 304px;
+      left: -14px;
+    }
+  
+    @media screen and (max-width: 640px){
+      max-width: 240px;
+      height: 240px;
+      left: -10px;
+    }
+  
+    @media screen and (max-width: 540px){
+      display: none;
+    }
+  }
+
+  .dotsBlue{
+    width: 100%;
+    height: auto;
+    max-width: 494px;
+    max-height: 434px;
+    z-index: 3;
+    left: 0;
+    top: 80px;
+
+    @media screen and (max-width: 1025px){
+      max-width: 340px;
+      left: 0;
+      top: 56px;
+    }
+  
+    @media screen and (max-width: 640px){
+      max-width: 274px;
+      left: 0;
+      top: 45px;
+    }
+  
+    @media screen and (max-width: 540px){
+      display: none;
+    }
+  }
+
+  .dotsWhite{
+    width: 100%;
+    height: auto;
+    max-width: 310px;
+    max-height: 588px;
+    z-index: 2;
+    left: 0;
+    top: 400px;
+
+    @media screen and (max-width: 1025px){
+      max-width: 216px;
+      left: 0;
+      top: 275px;
+    }
+  
+    @media screen and (max-width: 640px){
+      max-width: 174px;
+      left: 0;
+      top: 220px;
+    }
+  
+    @media screen and (max-width: 540px){
+      display: none;
+    }
+  }
+
+}
+
+.spcr300{padding-bottom:300px;}
+
+.clusterBurrowing{
+  max-width:874px; 
+  height:996px;
+
+  @media screen and (max-width: 1025px){
+    max-width: 600px;
+    height: 678px;
+  }
+
+  @media screen and (max-width: 640px){
+    max-width: 480px;
+    height: 542px;
+  }
+
+  @media screen and (max-width: 540px){
+    max-width: 320px;
+    height: 268px;
+  }
+}
